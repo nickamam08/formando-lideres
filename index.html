@@ -40,43 +40,43 @@
     /* DARK THEME: SPOTIFY DEEP BLACK & VIBRANT GREEN ACCENTS */
     html[data-theme="dark"] {
       --bg-page: #0a0a0c;
-      --bg-page-mesh: radial-gradient(circle at 10% 15%, rgba(29, 185, 84, 0.1) 0%, transparent 45%),
+      --bg-page-mesh: radial-gradient(circle at 10% 15%, rgba(29, 185, 84, 0.12) 0%, transparent 45%),
                       radial-gradient(circle at 90% 65%, rgba(16, 185, 129, 0.08) 0%, transparent 45%),
                       radial-gradient(circle at 50% 90%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
       --bg-surface: #121216;
       --bg-surface-elevated: #18181f;
-      --bg-surface-glass: rgba(18, 18, 24, 0.82);
-      --border-subtle: rgba(255, 255, 255, 0.09);
-      --border-hover: rgba(29, 185, 84, 0.5);
-      --border-strong: rgba(255, 255, 255, 0.18);
+      --bg-surface-glass: rgba(18, 18, 24, 0.88);
+      --border-subtle: rgba(255, 255, 255, 0.12);
+      --border-hover: rgba(29, 185, 84, 0.6);
+      --border-strong: rgba(255, 255, 255, 0.22);
       
       --text-main: #ffffff;
-      --text-secondary: #94a3b8;
-      --text-muted: #64748b;
-      --text-dim: #475569;
+      --text-secondary: #e2e8f0;
+      --text-muted: #cbd5e1;
+      --text-dim: #94a3b8;
 
       --btn-primary-bg: #1DB954;
       --btn-primary-text: #000000;
-      --btn-secondary-bg: rgba(255, 255, 255, 0.06);
-      --btn-secondary-border: rgba(255, 255, 255, 0.14);
-      --btn-secondary-text: #f8fafc;
+      --btn-secondary-bg: rgba(255, 255, 255, 0.08);
+      --btn-secondary-border: rgba(255, 255, 255, 0.18);
+      --btn-secondary-text: #ffffff;
 
-      --badge-bg: rgba(29, 185, 84, 0.12);
-      --badge-border: rgba(29, 185, 84, 0.32);
-      --badge-text: #1ed760;
+      --badge-bg: rgba(29, 185, 84, 0.15);
+      --badge-border: rgba(29, 185, 84, 0.4);
+      --badge-text: #22c55e;
 
       --card-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.85), 0 0 24px -8px rgba(29, 185, 84, 0.12);
-      --card-inner-glow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
-      --nav-bg: rgba(10, 10, 12, 0.88);
-      --toggle-bg: #18181f;
+      --card-inner-glow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      --nav-bg: rgba(10, 10, 12, 0.92);
+      --toggle-bg: #1e1e26;
       --logo-bg: #18181f;
 
-      --accent-pill-bg: rgba(29, 185, 84, 0.12);
-      --accent-pill-text: #1ed760;
-      --accent-pill-border: rgba(29, 185, 84, 0.32);
+      --accent-pill-bg: rgba(29, 185, 84, 0.15);
+      --accent-pill-text: #22c55e;
+      --accent-pill-border: rgba(29, 185, 84, 0.4);
 
-      --stat-ia-gradient: linear-gradient(135deg, #1ed760 0%, #06b6d4 100%);
-      --hero-title-gradient: linear-gradient(135deg, #ffffff 40%, #e2e8f0 75%, #1ed760 100%);
+      --stat-ia-gradient: linear-gradient(135deg, #22c55e 0%, #06b6d4 100%);
+      --hero-title-gradient: linear-gradient(135deg, #ffffff 40%, #f1f5f9 75%, #22c55e 100%);
     }
 
     /* LIGHT THEME: PORCELAIN WHITE & SPOTIFY GREEN ACCENTS */
@@ -389,36 +389,40 @@
     }
 
     .pill-tag-green, .pill-tag-spotify, .pill-tag-blue {
-      background: rgba(29, 185, 84, 0.12);
-      border-color: rgba(29, 185, 84, 0.32);
-      color: #1ed760;
+      background: rgba(29, 185, 84, 0.15);
+      border-color: rgba(29, 185, 84, 0.4);
+      color: #22c55e;
+      font-weight: 700;
     }
     html[data-theme="light"] .pill-tag-green, html[data-theme="light"] .pill-tag-spotify, html[data-theme="light"] .pill-tag-blue {
       color: #15803d;
     }
 
     .pill-tag-purple {
-      background: rgba(168, 85, 247, 0.1);
-      border-color: rgba(168, 85, 247, 0.28);
-      color: #c084fc;
+      background: rgba(168, 85, 247, 0.12);
+      border-color: rgba(168, 85, 247, 0.35);
+      color: #d8b4fe;
+      font-weight: 700;
     }
     html[data-theme="light"] .pill-tag-purple {
       color: #7e22ce;
     }
 
     .pill-tag-emerald {
-      background: rgba(16, 185, 129, 0.1);
-      border-color: rgba(16, 185, 129, 0.28);
-      color: #34d399;
+      background: rgba(16, 185, 129, 0.12);
+      border-color: rgba(16, 185, 129, 0.35);
+      color: #6ee7b7;
+      font-weight: 700;
     }
     html[data-theme="light"] .pill-tag-emerald {
       color: #059669;
     }
 
     .pill-tag-amber {
-      background: rgba(245, 158, 11, 0.1);
-      border-color: rgba(245, 158, 11, 0.28);
-      color: #fbbf24;
+      background: rgba(245, 158, 11, 0.12);
+      border-color: rgba(245, 158, 11, 0.35);
+      color: #fcd34d;
+      font-weight: 700;
     }
     html[data-theme="light"] .pill-tag-amber {
       color: #b45309;
@@ -428,8 +432,8 @@
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background-color: #1ed760;
-      box-shadow: 0 0 10px #1ed760;
+      background-color: #22c55e;
+      box-shadow: 0 0 10px #22c55e;
       animation: pulseDot 2s infinite ease-in-out;
     }
 
@@ -460,7 +464,7 @@
       top: 0;
       right: 0;
       bottom: 0;
-      width: 62%;
+      width: 58%;
       background-image: url('gallery/experience-fenalco.jpg');
       background-size: cover;
       background-position: center right;
@@ -470,21 +474,21 @@
     }
 
     html[data-theme="dark"] .hero-bg-overlay {
-      opacity: 0.88;
-      mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.25) 12%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,1) 85%);
-      -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.25) 12%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,1) 85%);
+      opacity: 0.92;
+      mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 15%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,1) 85%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 15%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,1) 85%);
     }
 
     html[data-theme="light"] .hero-bg-overlay {
-      opacity: 0.88;
-      mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.25) 12%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,1) 85%);
-      -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.25) 12%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,1) 85%);
+      opacity: 0.92;
+      mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 15%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,1) 85%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 15%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,1) 85%);
     }
 
     @media (max-width: 900px) {
       .hero-bg-overlay {
         width: 100%;
-        opacity: 0.25 !important;
+        opacity: 0.22 !important;
         mask-image: none !important;
         -webkit-mask-image: none !important;
       }
@@ -496,7 +500,7 @@
     }
 
     .hero-content {
-      max-width: 720px;
+      max-width: 600px;
     }
 
     .hero-h1 {
@@ -506,6 +510,7 @@
       line-height: 1.1;
       margin-bottom: 1.1rem;
       word-break: break-word;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7);
     }
 
     .hero-gradient-text {
@@ -520,6 +525,14 @@
       line-height: 1.6;
       margin-bottom: 2rem;
       font-weight: 400;
+      text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+    }
+    .hero-lead strong {
+      color: #ffffff;
+      font-weight: 700;
+    }
+    html[data-theme="light"] .hero-lead strong {
+      color: #0f172a;
     }
     @media (max-width: 768px) {
       .hero-lead { margin-bottom: 1.35rem; }
@@ -528,21 +541,41 @@
     .hero-stats-row {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 1.25rem;
-      padding-top: 2rem;
+      gap: 1rem;
+      padding-top: 1.75rem;
       border-top: 1px solid var(--border-subtle);
     }
     @media (max-width: 768px) {
       .hero-stats-row {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 0.85rem;
         padding-top: 1.25rem;
       }
     }
     @media (max-width: 360px) {
       .hero-stats-row {
-        gap: 0.75rem;
+        gap: 0.65rem;
       }
+    }
+
+    .hero-stat-item {
+      background: rgba(18, 18, 24, 0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      transition: var(--transition-smooth);
+    }
+    .hero-stat-item:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+    html[data-theme="light"] .hero-stat-item {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
     }
 
     .hero-stat-item h3 {
@@ -552,6 +585,7 @@
       letter-spacing: -0.03em;
       line-height: 1;
       color: var(--text-main);
+      margin-bottom: 0.25rem;
     }
     .hero-stat-item h3.stat-ia {
       background: var(--stat-ia-gradient);
@@ -562,8 +596,8 @@
     .hero-stat-item p {
       font-size: clamp(0.72rem, 2vw, 0.8rem);
       color: var(--text-muted);
-      margin-top: 0.35rem;
-      font-weight: 500;
+      margin-top: 0.25rem;
+      font-weight: 600;
       line-height: 1.35;
     }
 
@@ -1592,7 +1626,7 @@
       <div class="bento-card col-12 hero-bento">
         <div class="hero-bg-overlay"></div>
         <div class="hero-content">
-          <div class="pill-tag pill-tag-blue">
+          <div class="pill-tag pill-tag-spotify">
             <span class="live-dot"></span>
             PROGRAMA DE DESARROLLO & FORMACIÓN COMERCIAL
           </div>
@@ -1637,7 +1671,7 @@
               Presupuesto transparente y modular. Configura los entregables y visualiza la liquidación total en tiempo real.
             </p>
           </div>
-          <div class="pill-tag pill-tag-blue">GRUPO BASE: HASTA 15 PARTICIPANTES</div>
+          <div class="pill-tag pill-tag-spotify">GRUPO BASE: HASTA 15 PARTICIPANTES</div>
         </div>
 
         <div class="quote-bento-grid">
@@ -1646,7 +1680,7 @@
           <div>
             <div class="toggle-package-item is-selected" style="cursor:default;">
               <div style="display:flex; align-items:center; gap:0.75rem;">
-                <div class="checkbox-indicator" style="background:linear-gradient(135deg, #3b82f6 0%, #6366f1 100%); border-color:#6366f1; color:#ffffff;">✓</div>
+                <div class="checkbox-indicator" style="background:linear-gradient(135deg, #1ed760 0%, #1DB954 100%); border-color:#1ed760; color:#000000;">✓</div>
                 <div class="package-text">
                   <h4>Programa "Líderes Formando Líderes"</h4>
                   <p>18 Horas presenciales (3 jornadas de 6h) · 2 Facilitadores · Materiales · Certificados</p>
@@ -1772,7 +1806,7 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
             </div>
           </div>
-          <div class="pill-tag pill-tag-blue">6 Horas Presenciales</div>
+          <div class="pill-tag pill-tag-spotify">6 Horas Presenciales</div>
           <h2 class="pillar-title">LIDERARSE</h2>
           <p class="pillar-quote">"El líder comienza por sí mismo para ejercer un liderazgo consciente y cercano."</p>
           
@@ -1855,7 +1889,7 @@
       <div class="bento-card col-12">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
           <div>
-            <div class="pill-tag pill-tag-blue">EQUIPO & RESPALDO</div>
+            <div class="pill-tag pill-tag-spotify">EQUIPO & RESPALDO</div>
             <h3 style="font-size: 1.45rem; font-weight: 800; letter-spacing: -0.02em;">Facilitadores Principales</h3>
           </div>
           <div style="font-size: 0.82rem; color: var(--text-muted); font-weight: 500;">
@@ -2092,7 +2126,7 @@
       <!-- Metodología 4 Fases (8 Cols) -->
       <div class="bento-card col-8">
         <div>
-          <div class="pill-tag pill-tag-blue">METODOLOGÍA VIVENCIAL</div>
+          <div class="pill-tag pill-tag-spotify">METODOLOGÍA VIVENCIAL</div>
           <h3 style="font-size: 1.45rem; font-weight: 800; letter-spacing: -0.02em;">El Ciclo Continuo de Aprendizaje</h3>
           <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.25rem;">
             Una experiencia 100% activa. No es una charla pasiva: cada concepto se vive, se aplica al caso de la empresa y se comparte.
