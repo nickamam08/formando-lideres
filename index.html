@@ -12,7 +12,7 @@
 
   <style>
     /* -------------------------------------------------------------
-       MONOCHROMATIC & GLASS DESIGN SYSTEM (STRICT BLACK / WHITE / GRAYS)
+       ELEGANT DESIGN SYSTEM WITH SOFT TASTEFUL ACCENTS
        ------------------------------------------------------------- */
     :root {
       --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -24,74 +24,98 @@
       --radius-full: 9999px;
       --transition-fast: 0.15s cubic-bezier(0.16, 1, 0.3, 1);
       --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+
+      /* Soft Shared Palette Tokens */
+      --accent-blue: #3b82f6;
+      --accent-indigo: #6366f1;
+      --accent-violet: #8b5cf6;
+      --accent-cyan: #06b6d4;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
     }
 
-    /* DARK THEME: STRICT PURE BLACKS & GRAYS ONLY */
+    /* DARK THEME: DEEP OBSIDIAN WITH SOFT LUMINESCENT ACCENTS */
     html[data-theme="dark"] {
-      --bg-page: #000000;
-      --bg-page-mesh: radial-gradient(circle at 15% 15%, rgba(255, 255, 255, 0.03) 0%, transparent 45%),
-                      radial-gradient(circle at 85% 85%, rgba(255, 255, 255, 0.02) 0%, transparent 45%);
-      --bg-surface: #0a0a0a;
-      --bg-surface-elevated: #121212;
-      --bg-surface-glass: rgba(18, 18, 18, 0.75);
-      --border-subtle: rgba(255, 255, 255, 0.1);
-      --border-hover: rgba(255, 255, 255, 0.3);
-      --border-strong: rgba(255, 255, 255, 0.2);
+      --bg-page: #090a0f;
+      --bg-page-mesh: radial-gradient(circle at 12% 15%, rgba(99, 102, 241, 0.08) 0%, transparent 45%),
+                      radial-gradient(circle at 88% 65%, rgba(6, 182, 212, 0.06) 0%, transparent 45%),
+                      radial-gradient(circle at 50% 90%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+      --bg-surface: #0f121a;
+      --bg-surface-elevated: #161b26;
+      --bg-surface-glass: rgba(18, 23, 35, 0.78);
+      --border-subtle: rgba(255, 255, 255, 0.09);
+      --border-hover: rgba(99, 102, 241, 0.45);
+      --border-strong: rgba(255, 255, 255, 0.18);
       
       --text-main: #ffffff;
-      --text-secondary: #a1a1aa;
-      --text-muted: #71717a;
-      --text-dim: #52525b;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --text-dim: #475569;
 
       --btn-primary-bg: #ffffff;
-      --btn-primary-text: #000000;
+      --btn-primary-text: #090a0f;
       --btn-secondary-bg: rgba(255, 255, 255, 0.06);
       --btn-secondary-border: rgba(255, 255, 255, 0.14);
-      --btn-secondary-text: #ffffff;
+      --btn-secondary-text: #f8fafc;
 
-      --badge-bg: rgba(255, 255, 255, 0.05);
-      --badge-border: rgba(255, 255, 255, 0.12);
-      --badge-text: #ffffff;
+      --badge-bg: rgba(99, 102, 241, 0.12);
+      --badge-border: rgba(99, 102, 241, 0.28);
+      --badge-text: #a5b4fc;
 
-      --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.9);
+      --card-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.8), 0 0 24px -8px rgba(99, 102, 241, 0.1);
       --card-inner-glow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
-      --nav-bg: rgba(0, 0, 0, 0.85);
-      --toggle-bg: #18181b;
-      --logo-bg: #18181b;
+      --nav-bg: rgba(9, 10, 15, 0.85);
+      --toggle-bg: #161b26;
+      --logo-bg: #161b26;
+
+      --accent-pill-bg: rgba(99, 102, 241, 0.12);
+      --accent-pill-text: #a5b4fc;
+      --accent-pill-border: rgba(99, 102, 241, 0.3);
+
+      --stat-ia-gradient: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+      --hero-title-gradient: linear-gradient(135deg, #ffffff 40%, #e2e8f0 75%, #93c5fd 100%);
     }
 
-    /* LIGHT THEME: STRICT PURE WHITES & GLASSES ONLY */
+    /* LIGHT THEME: CLEAN PORCELAIN WITH SOFT VIBRANT ACCENTS */
     html[data-theme="light"] {
-      --bg-page: #ffffff;
-      --bg-page-mesh: radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.02) 0%, transparent 50%),
-                      radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.015) 0%, transparent 50%);
+      --bg-page: #f8fafc;
+      --bg-page-mesh: radial-gradient(circle at 12% 15%, rgba(99, 102, 241, 0.05) 0%, transparent 45%),
+                      radial-gradient(circle at 88% 65%, rgba(6, 182, 212, 0.04) 0%, transparent 45%),
+                      radial-gradient(circle at 50% 90%, rgba(139, 92, 246, 0.035) 0%, transparent 50%);
       --bg-surface: #ffffff;
-      --bg-surface-elevated: #f8fafc;
-      --bg-surface-glass: rgba(255, 255, 255, 0.8);
-      --border-subtle: rgba(0, 0, 0, 0.08);
-      --border-hover: rgba(0, 0, 0, 0.25);
-      --border-strong: rgba(0, 0, 0, 0.16);
+      --bg-surface-elevated: #f1f5f9;
+      --bg-surface-glass: rgba(255, 255, 255, 0.88);
+      --border-subtle: rgba(15, 23, 42, 0.08);
+      --border-hover: rgba(99, 102, 241, 0.38);
+      --border-strong: rgba(15, 23, 42, 0.15);
 
-      --text-main: #000000;
-      --text-secondary: #3f3f46;
-      --text-muted: #71717a;
-      --text-dim: #a1a1aa;
+      --text-main: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --text-dim: #94a3b8;
 
-      --btn-primary-bg: #000000;
+      --btn-primary-bg: #0f172a;
       --btn-primary-text: #ffffff;
-      --btn-secondary-bg: rgba(0, 0, 0, 0.03);
-      --btn-secondary-border: rgba(0, 0, 0, 0.09);
-      --btn-secondary-text: #000000;
+      --btn-secondary-bg: rgba(15, 23, 42, 0.04);
+      --btn-secondary-border: rgba(15, 23, 42, 0.1);
+      --btn-secondary-text: #0f172a;
 
-      --badge-bg: rgba(0, 0, 0, 0.04);
-      --badge-border: rgba(0, 0, 0, 0.08);
-      --badge-text: #000000;
+      --badge-bg: rgba(99, 102, 241, 0.08);
+      --badge-border: rgba(99, 102, 241, 0.22);
+      --badge-text: #4338ca;
 
-      --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.06), 0 2px 8px -2px rgba(0, 0, 0, 0.03);
+      --card-shadow: 0 12px 30px -10px rgba(15, 23, 42, 0.07), 0 2px 8px -2px rgba(15, 23, 42, 0.03);
       --card-inner-glow: inset 0 1px 0 0 rgba(255, 255, 255, 1);
-      --nav-bg: rgba(255, 255, 255, 0.85);
-      --toggle-bg: #f4f4f5;
+      --nav-bg: rgba(255, 255, 255, 0.88);
+      --toggle-bg: #f1f5f9;
       --logo-bg: #ffffff;
+
+      --accent-pill-bg: rgba(99, 102, 241, 0.08);
+      --accent-pill-text: #4338ca;
+      --accent-pill-border: rgba(99, 102, 241, 0.25);
+
+      --stat-ia-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      --hero-title-gradient: linear-gradient(135deg, #0f172a 40%, #1e293b 75%, #2563eb 100%);
     }
 
     /* BASE & RESET */
@@ -156,14 +180,15 @@
       width: 34px;
       height: 34px;
       border-radius: var(--radius-sm);
-      background: var(--btn-primary-bg);
-      color: var(--btn-primary-text);
+      background: linear-gradient(135deg, #2563eb 0%, #6366f1 100%);
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 800;
       font-size: 0.95rem;
-      border: 1px solid var(--border-strong);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 2px 10px rgba(99, 102, 241, 0.35);
       flex-shrink: 0;
     }
 
@@ -249,10 +274,12 @@
       background: var(--btn-primary-bg);
       color: var(--btn-primary-text);
       border-color: var(--btn-primary-bg);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     }
     .btn-primary:hover {
-      opacity: 0.88;
+      opacity: 0.92;
       transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.25);
     }
 
     /* THEME TOGGLE */
@@ -336,51 +363,140 @@
       .bento-card { padding: 1rem; }
     }
 
-    /* BADGES */
+    /* BADGES & PILL TAGS */
     .pill-tag {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.45rem;
       font-size: 0.72rem;
       font-family: var(--font-mono);
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      padding: 0.3rem 0.75rem;
+      padding: 0.32rem 0.8rem;
       border-radius: var(--radius-full);
-      background: var(--badge-bg);
-      border: 1px solid var(--badge-border);
-      color: var(--badge-text);
+      background: var(--accent-pill-bg);
+      border: 1px solid var(--accent-pill-border);
+      color: var(--accent-pill-text);
       width: fit-content;
       margin-bottom: 0.85rem;
+      transition: var(--transition-smooth);
+    }
+
+    .pill-tag-blue {
+      background: rgba(59, 130, 246, 0.1);
+      border-color: rgba(59, 130, 246, 0.28);
+      color: #60a5fa;
+    }
+    html[data-theme="light"] .pill-tag-blue {
+      color: #2563eb;
+    }
+
+    .pill-tag-purple {
+      background: rgba(139, 92, 246, 0.1);
+      border-color: rgba(139, 92, 246, 0.28);
+      color: #a78bfa;
+    }
+    html[data-theme="light"] .pill-tag-purple {
+      color: #6d28d9;
+    }
+
+    .pill-tag-emerald {
+      background: rgba(16, 185, 129, 0.1);
+      border-color: rgba(16, 185, 129, 0.28);
+      color: #34d399;
+    }
+    html[data-theme="light"] .pill-tag-emerald {
+      color: #059669;
+    }
+
+    .pill-tag-amber {
+      background: rgba(245, 158, 11, 0.1);
+      border-color: rgba(245, 158, 11, 0.28);
+      color: #fbbf24;
+    }
+    html[data-theme="light"] .pill-tag-amber {
+      color: #b45309;
     }
 
     .live-dot {
-      width: 6px;
-      height: 6px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
-      background-color: var(--text-main);
-      box-shadow: 0 0 6px var(--text-main);
+      background-color: #10b981;
+      box-shadow: 0 0 8px #10b981;
       animation: pulseDot 2s infinite ease-in-out;
     }
 
     @keyframes pulseDot {
       0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.3; transform: scale(0.85); }
+      50% { opacity: 0.35; transform: scale(0.8); }
     }
 
     /* -------------------------------------------------------------
-       HERO BENTO CARD
+       HERO BENTO CARD (WITH SOFT GRADIENT WORKSHOP BACKGROUND)
        ------------------------------------------------------------- */
     .hero-bento {
-      padding: 3rem 2.5rem;
-      background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-surface-elevated) 100%);
+      position: relative;
+      overflow: hidden;
+      padding: 3.5rem 2.75rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
     }
     @media (max-width: 768px) {
       .hero-bento { padding: 2rem 1.25rem; }
     }
     @media (max-width: 380px) {
       .hero-bento { padding: 1.5rem 1rem; }
+    }
+
+    .hero-bg-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('gallery/experience-fenalco.jpg');
+      background-size: cover;
+      background-position: center right;
+      pointer-events: none;
+      z-index: 0;
+      transition: opacity var(--transition-smooth);
+    }
+
+    html[data-theme="dark"] .hero-bg-overlay {
+      opacity: 0.34;
+      mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 25%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,1) 100%);
+      -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 25%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,1) 100%);
+    }
+    html[data-theme="dark"] .hero-bento::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 18% 45%, rgba(15, 18, 26, 0.98) 0%, rgba(15, 18, 26, 0.88) 50%, rgba(15, 18, 26, 0.3) 100%),
+                  linear-gradient(180deg, rgba(15, 18, 26, 0.6) 0%, rgba(15, 18, 26, 0.95) 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    html[data-theme="light"] .hero-bg-overlay {
+      opacity: 0.26;
+      mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 25%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,1) 100%);
+      -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 25%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,1) 100%);
+    }
+    html[data-theme="light"] .hero-bento::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 18% 45%, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.88) 50%, rgba(255, 255, 255, 0.45) 100%),
+                  linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.95) 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero-content, .hero-stats-row {
+      position: relative;
+      z-index: 2;
     }
 
     .hero-content {
@@ -397,7 +513,7 @@
     }
 
     .hero-gradient-text {
-      background: linear-gradient(180deg, var(--text-main) 40%, var(--text-muted) 100%);
+      background: var(--hero-title-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -441,6 +557,12 @@
       line-height: 1;
       color: var(--text-main);
     }
+    .hero-stat-item h3.stat-ia {
+      background: var(--stat-ia-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
     .hero-stat-item p {
       font-size: clamp(0.72rem, 2vw, 0.8rem);
       color: var(--text-muted);
@@ -450,13 +572,14 @@
     }
 
     /* -------------------------------------------------------------
-       THE 3-PILLAR BENTO CARDS
+       THE 3-PILLAR BENTO CARDS (WITH SUBTLE COLOR IDENTITY)
        ------------------------------------------------------------- */
     .pillar-card {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       min-height: 380px;
+      transition: var(--transition-smooth);
     }
     @media (max-width: 1024px) {
       .pillar-card { min-height: auto; }
@@ -477,8 +600,8 @@
     }
 
     .pillar-icon-box {
-      width: 42px;
-      height: 42px;
+      width: 44px;
+      height: 44px;
       border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
@@ -487,6 +610,34 @@
       border: 1px solid var(--border-subtle);
       color: var(--text-main);
       flex-shrink: 0;
+      transition: var(--transition-smooth);
+    }
+
+    .pillar-icon-blue {
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.08);
+      border-color: rgba(56, 189, 248, 0.25);
+    }
+    html[data-theme="light"] .pillar-icon-blue {
+      color: #0284c7;
+    }
+
+    .pillar-icon-purple {
+      color: #a78bfa;
+      background: rgba(139, 92, 246, 0.08);
+      border-color: rgba(139, 92, 246, 0.25);
+    }
+    html[data-theme="light"] .pillar-icon-purple {
+      color: #7c3aed;
+    }
+
+    .pillar-icon-emerald {
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.08);
+      border-color: rgba(16, 185, 129, 0.25);
+    }
+    html[data-theme="light"] .pillar-icon-emerald {
+      color: #059669;
     }
 
     .pillar-title {
@@ -523,7 +674,7 @@
     }
 
     .feature-check {
-      color: var(--text-main);
+      color: #10b981;
       font-weight: bold;
       flex-shrink: 0;
     }
@@ -541,14 +692,15 @@
       line-height: 1.35;
     }
 
-    /* MONOCHROME AI LIVE WIDGET */
+    /* AI LIVE WIDGET (SOFT VIOLET/CYAN GLASS) */
     .ai-live-widget {
-      background: var(--bg-surface-elevated);
-      border: 1px solid var(--border-subtle);
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(6, 182, 212, 0.06) 100%);
+      border: 1px solid rgba(99, 102, 241, 0.24);
       border-radius: var(--radius-md);
       padding: 1rem;
       margin: 1rem 0;
       font-size: 0.8rem;
+      box-shadow: 0 4px 16px rgba(99, 102, 241, 0.06);
     }
 
     .ai-widget-header {
@@ -563,12 +715,12 @@
     .ai-chip {
       font-family: var(--font-mono);
       font-size: 0.68rem;
-      background: var(--badge-bg);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-main);
-      padding: 0.15rem 0.5rem;
+      background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+      color: #ffffff;
+      padding: 0.18rem 0.55rem;
       border-radius: 4px;
-      font-weight: 600;
+      font-weight: 700;
+      letter-spacing: 0.02em;
     }
 
     .ai-demo-box {
@@ -615,9 +767,12 @@
       font-family: var(--font-mono);
       font-size: 0.72rem;
       font-weight: 700;
-      color: var(--text-muted);
+      color: #60a5fa;
       margin-bottom: 0.5rem;
       display: block;
+    }
+    html[data-theme="light"] .method-step-num {
+      color: #2563eb;
     }
 
     .method-step-title {
@@ -937,8 +1092,8 @@
       border-color: var(--border-hover);
     }
     .toggle-package-item.is-selected {
-      border-color: var(--border-hover);
-      background: var(--badge-bg);
+      border-color: rgba(99, 102, 241, 0.45);
+      background: rgba(99, 102, 241, 0.06);
     }
 
     .checkbox-indicator {
@@ -956,9 +1111,10 @@
       flex-shrink: 0;
     }
     .toggle-package-item.is-selected .checkbox-indicator {
-      border-color: var(--btn-primary-bg);
-      background: var(--btn-primary-bg);
-      color: var(--btn-primary-text);
+      border-color: #6366f1;
+      background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(99, 102, 241, 0.35);
     }
 
     .package-text h4 {
@@ -1016,9 +1172,9 @@
     }
 
     .receipt-row.receipt-total .final-amount {
-      color: var(--text-main);
+      color: var(--accent-emerald);
       font-family: var(--font-mono);
-      font-size: clamp(1.2rem, 4vw, 1.45rem);
+      font-size: clamp(1.3rem, 4.5vw, 1.6rem);
       letter-spacing: -0.02em;
     }
 
@@ -1033,11 +1189,11 @@
     .payment-bar-seg {
       width: 50%;
       height: 100%;
-      background: var(--text-main);
+      background: linear-gradient(90deg, #3b82f6, #6366f1);
       position: relative;
     }
     .payment-bar-seg:last-child {
-      background: var(--text-muted);
+      background: rgba(99, 102, 241, 0.35);
       border-left: 1px solid var(--bg-surface);
     }
 
@@ -1432,8 +1588,9 @@
     <!-- 1. HERO BENTO CARD -->
     <div class="bento-grid">
       <div class="bento-card col-12 hero-bento">
+        <div class="hero-bg-overlay"></div>
         <div class="hero-content">
-          <div class="pill-tag">
+          <div class="pill-tag pill-tag-blue">
             <span class="live-dot"></span>
             PROGRAMA DE DESARROLLO & FORMACIÓN COMERCIAL
           </div>
@@ -1459,7 +1616,7 @@
             <p>Participantes (aforo base)</p>
           </div>
           <div class="hero-stat-item">
-            <h3>IA+</h3>
+            <h3 class="stat-ia">IA+</h3>
             <p>Inteligencia Artificial transversal</p>
           </div>
         </div>
@@ -1472,13 +1629,13 @@
       <div class="bento-card col-12">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
           <div>
-            <div class="pill-tag">COTIZACIÓN & INVERSIÓN COMERCIAL</div>
+            <div class="pill-tag pill-tag-amber">COTIZACIÓN & INVERSIÓN COMERCIAL</div>
             <h2 style="font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em;">Propuesta Económica e Inversión</h2>
             <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
               Presupuesto transparente y modular. Configura los entregables y visualiza la liquidación total en tiempo real.
             </p>
           </div>
-          <div class="pill-tag">GRUPO BASE: HASTA 15 PARTICIPANTES</div>
+          <div class="pill-tag pill-tag-blue">GRUPO BASE: HASTA 15 PARTICIPANTES</div>
         </div>
 
         <div class="quote-bento-grid">
@@ -1487,7 +1644,7 @@
           <div>
             <div class="toggle-package-item is-selected" style="cursor:default;">
               <div style="display:flex; align-items:center; gap:0.75rem;">
-                <div class="checkbox-indicator" style="background:var(--btn-primary-bg); border-color:var(--btn-primary-bg); color:var(--btn-primary-text);">✓</div>
+                <div class="checkbox-indicator" style="background:linear-gradient(135deg, #3b82f6 0%, #6366f1 100%); border-color:#6366f1; color:#ffffff;">✓</div>
                 <div class="package-text">
                   <h4>Programa "Líderes Formando Líderes"</h4>
                   <p>18 Horas presenciales (3 jornadas de 6h) · 2 Facilitadores · Materiales · Certificados</p>
@@ -1573,22 +1730,22 @@
       
       <div class="bento-card col-6">
         <div>
-          <div class="pill-tag">✓ INCLUIDO EN EL PROGRAMA</div>
+          <div class="pill-tag pill-tag-emerald">✓ INCLUIDO EN EL PROGRAMA</div>
           <h4 style="font-size: 1.15rem; font-weight: 700;">Entregables y Acompañamiento</h4>
           <ul class="scope-list-bento">
-            <li class="scope-item-bento"><span style="color:var(--text-main); font-weight:bold;">✓</span> 18 horas presenciales (3 jornadas vivenciales de 6h).</li>
-            <li class="scope-item-bento"><span style="color:var(--text-main); font-weight:bold;">✓</span> 2 Facilitadores expertos en vivo durante todas las sesiones.</li>
-            <li class="scope-item-bento"><span style="color:var(--text-main); font-weight:bold;">✓</span> Diseño y personalización metodológica al caso de la empresa.</li>
-            <li class="scope-item-bento"><span style="color:var(--text-main); font-weight:bold;">✓</span> Herramientas y prompts de Inteligencia Artificial aplicada.</li>
-            <li class="scope-item-bento"><span style="color:var(--text-main); font-weight:bold;">✓</span> Materiales de trabajo, memorias y guías para participantes.</li>
-            <li class="scope-item-bento"><span style="color:var(--text-main); font-weight:bold;">✓</span> Certificación física y digital (PD'P Academia).</li>
+            <li class="scope-item-bento"><span style="color:var(--accent-emerald); font-weight:bold;">✓</span> 18 horas presenciales (3 jornadas vivenciales de 6h).</li>
+            <li class="scope-item-bento"><span style="color:var(--accent-emerald); font-weight:bold;">✓</span> 2 Facilitadores expertos en vivo durante todas las sesiones.</li>
+            <li class="scope-item-bento"><span style="color:var(--accent-emerald); font-weight:bold;">✓</span> Diseño y personalización metodológica al caso de la empresa.</li>
+            <li class="scope-item-bento"><span style="color:var(--accent-emerald); font-weight:bold;">✓</span> Herramientas y prompts de Inteligencia Artificial aplicada.</li>
+            <li class="scope-item-bento"><span style="color:var(--accent-emerald); font-weight:bold;">✓</span> Materiales de trabajo, memorias y guías para participantes.</li>
+            <li class="scope-item-bento"><span style="color:var(--accent-emerald); font-weight:bold;">✓</span> Certificación física y digital (PD'P Academia).</li>
           </ul>
         </div>
       </div>
 
       <div class="bento-card col-6">
         <div>
-          <div class="pill-tag">LOGÍSTICA REQUERIDA</div>
+          <div class="pill-tag pill-tag-amber">LOGÍSTICA REQUERIDA</div>
           <h4 style="font-size: 1.15rem; font-weight: 700;">A Cargo del Cliente / No Incluye</h4>
           <ul class="scope-list-bento">
             <li class="scope-item-bento"><span style="color:var(--text-dim)">✕</span> Sede, auditorio o sala de trabajo con ayudas audiovisuales.</li>
@@ -1609,11 +1766,11 @@
         <div>
           <div class="pillar-card-top">
             <span class="pillar-number">ENCUENTRO 01</span>
-            <div class="pillar-icon-box">
+            <div class="pillar-icon-box pillar-icon-blue">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
             </div>
           </div>
-          <div class="pill-tag">6 Horas Presenciales</div>
+          <div class="pill-tag pill-tag-blue">6 Horas Presenciales</div>
           <h2 class="pillar-title">LIDERARSE</h2>
           <p class="pillar-quote">"El líder comienza por sí mismo para ejercer un liderazgo consciente y cercano."</p>
           
@@ -1634,11 +1791,11 @@
         <div>
           <div class="pillar-card-top">
             <span class="pillar-number">ENCUENTRO 02</span>
-            <div class="pillar-icon-box">
+            <div class="pillar-icon-box pillar-icon-purple">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             </div>
           </div>
-          <div class="pill-tag">6 Horas Presenciales</div>
+          <div class="pill-tag pill-tag-purple">6 Horas Presenciales</div>
           <h2 class="pillar-title">LIDERAR</h2>
           <p class="pillar-quote">"El liderazgo se demuestra en la relación, confianza y movilización con otros."</p>
           
@@ -1668,11 +1825,11 @@
         <div>
           <div class="pillar-card-top">
             <span class="pillar-number">ENCUENTRO 03</span>
-            <div class="pillar-icon-box">
+            <div class="pillar-icon-box pillar-icon-emerald">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
             </div>
           </div>
-          <div class="pill-tag">6 Horas Presenciales</div>
+          <div class="pill-tag pill-tag-emerald">6 Horas Presenciales</div>
           <h2 class="pillar-title">MULTIPLICAR</h2>
           <p class="pillar-quote">"Un líder transforma cuando logra que otros también crezcan y repliquen capacidades."</p>
           
@@ -1696,7 +1853,7 @@
       <div class="bento-card col-12">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
           <div>
-            <div class="pill-tag">EQUIPO & RESPALDO</div>
+            <div class="pill-tag pill-tag-blue">EQUIPO & RESPALDO</div>
             <h3 style="font-size: 1.45rem; font-weight: 800; letter-spacing: -0.02em;">Facilitadores Principales</h3>
           </div>
           <div style="font-size: 0.82rem; color: var(--text-muted); font-weight: 500;">
@@ -1933,7 +2090,7 @@
       <!-- Metodología 4 Fases (8 Cols) -->
       <div class="bento-card col-8">
         <div>
-          <div class="pill-tag">METODOLOGÍA VIVENCIAL</div>
+          <div class="pill-tag pill-tag-blue">METODOLOGÍA VIVENCIAL</div>
           <h3 style="font-size: 1.45rem; font-weight: 800; letter-spacing: -0.02em;">El Ciclo Continuo de Aprendizaje</h3>
           <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.25rem;">
             Una experiencia 100% activa. No es una charla pasiva: cada concepto se vive, se aplica al caso de la empresa y se comparte.
@@ -1946,17 +2103,17 @@
               <div class="method-step-desc">Conceptos clave y marcos globales de liderazgo.</div>
             </div>
             <div class="method-step-box">
-              <span class="method-step-num">02. FASE</span>
+              <span class="method-step-num" style="color:var(--accent-purple);">02. FASE</span>
               <div class="method-step-title">Experimentar</div>
               <div class="method-step-desc">Dinámicas grupales y vivencias en tiempo real.</div>
             </div>
             <div class="method-step-box">
-              <span class="method-step-num">03. FASE</span>
+              <span class="method-step-num" style="color:var(--accent-cyan);">03. FASE</span>
               <div class="method-step-title">Aplicar</div>
               <div class="method-step-desc">Solución de casos cotidianos del negocio con IA.</div>
             </div>
             <div class="method-step-box">
-              <span class="method-step-num">04. FASE</span>
+              <span class="method-step-num" style="color:var(--accent-emerald);">04. FASE</span>
               <div class="method-step-title">Compartir</div>
               <div class="method-step-desc">Transferencia ágil de capacidades a otros.</div>
             </div>
@@ -1967,7 +2124,7 @@
       <!-- Factor Diferencial (4 Cols) -->
       <div class="bento-card col-4">
         <div>
-          <div class="pill-tag">FACTOR DIFERENCIAL</div>
+          <div class="pill-tag pill-tag-purple">FACTOR DIFERENCIAL</div>
           <h3 style="font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em;">Humano + Inteligencia Artificial</h3>
           <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.6rem; line-height: 1.55;">
             Unimos el <strong>desarrollo emocional y humano</strong> con <strong>herramientas de Inteligencia Artificial aplicada</strong> para multiplicar la productividad y la capacidad formativa de los líderes.
@@ -1975,7 +2132,7 @@
         </div>
 
         <div style="background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 0.9rem; margin-top: 1.2rem;">
-          <div style="font-size: 0.75rem; font-family: var(--font-mono); font-weight: 700;">✓ CERTIFICACIÓN INCLUIDA</div>
+          <div style="font-size: 0.75rem; font-family: var(--font-mono); font-weight: 700; color:var(--accent-emerald);">✓ CERTIFICACIÓN INCLUIDA</div>
           <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.2rem;">
             Constancia de Participación física y digital emitida por <strong>PD’P Academia</strong>.
           </div>
@@ -1989,7 +2146,7 @@
       <div class="bento-card col-12">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom: 0.5rem;">
           <div>
-            <div class="pill-tag">REGISTRO & EVIDENCIA EN VIVO</div>
+            <div class="pill-tag pill-tag-emerald">REGISTRO & EVIDENCIA EN VIVO</div>
             <h3 style="font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em;">Galería de Experiencias y Talleres</h3>
             <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
               Momentos reales de nuestras jornadas vivenciales: facilitación estratégica, dinámicas de equipo y multiplicación de capacidades.
