@@ -502,17 +502,18 @@
     }
 
     .hero-content {
-      max-width: 600px;
+      max-width: 620px;
     }
 
     .hero-h1 {
-      font-size: clamp(2rem, 5.5vw, 3.8rem);
+      font-size: clamp(2.2rem, 5.5vw, 3.8rem);
       font-weight: 800;
       letter-spacing: -0.04em;
       line-height: 1.1;
-      margin-bottom: 1.1rem;
+      margin-bottom: 0.65rem;
       word-break: break-word;
-      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7);
+      color: var(--text-main);
+      text-shadow: none;
     }
 
     .hero-gradient-text {
@@ -521,23 +522,32 @@
       -webkit-text-fill-color: transparent;
     }
 
+    .hero-subtitle {
+      font-size: clamp(0.95rem, 2.2vw, 1.12rem);
+      font-weight: 700;
+      color: #1ed760;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+    }
+    html[data-theme="light"] .hero-subtitle {
+      color: #15803d;
+    }
+
     .hero-lead {
-      font-size: clamp(0.95rem, 2.5vw, 1.12rem);
+      font-size: clamp(0.9rem, 2vw, 1rem);
       color: var(--text-secondary);
-      line-height: 1.6;
-      margin-bottom: 2rem;
+      line-height: 1.55;
+      margin-bottom: 1.75rem;
       font-weight: 400;
-      text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+      text-shadow: none;
     }
     .hero-lead strong {
-      color: #ffffff;
+      color: var(--text-main);
       font-weight: 700;
     }
-    html[data-theme="light"] .hero-lead strong {
-      color: #0f172a;
-    }
     @media (max-width: 768px) {
-      .hero-lead { margin-bottom: 1.35rem; }
+      .hero-lead { margin-bottom: 1.25rem; }
     }
 
     .hero-stats-row {
@@ -1630,19 +1640,16 @@
         <div class="hero-content">
           <div class="pill-tag pill-tag-spotify">
             <span class="live-dot"></span>
-            01. EL RETO &amp; 02. NUESTRA PROPUESTA
+            PROGRAMA DE DESARROLLO &amp; FORMACIÓN COMERCIAL
           </div>
           <h1 class="hero-h1">
             <span class="hero-gradient-text">Líderes Formando Líderes</span>
           </h1>
-          <p class="hero-lead" style="font-weight:700; font-size:1.05rem; color:var(--text-main); margin-bottom:0.75rem;">
+          <div class="hero-subtitle">
             Programa de desarrollo, liderazgo y multiplicación de capacidades
-          </p>
-          <p class="hero-lead" style="font-size:0.9rem; margin-bottom:0.65rem;">
-            <strong>01. EL RETO:</strong> Las organizaciones necesitan líderes capaces no solo de gestionar responsabilidades, sino de generar confianza, movilizar equipos, adaptarse a nuevos escenarios y transmitir capacidades a otras personas. Hoy, formar un líder implica desarrollar tanto sus habilidades personales e interpersonales como su capacidad para utilizar nuevas herramientas, incluyendo tecnologías digitales e inteligencia artificial, para trabajar, comunicar y multiplicar conocimiento. Desde enfoques internacionales de <em>Leadership Development</em>, <em>Leaders Developing Leaders</em> y <em>Train the Trainer</em>, proponemos una experiencia diseñada para que el aprendizaje no termine en el participante, sino que pueda proyectarse hacia su equipo y organización.
-          </p>
-          <p class="hero-lead" style="font-size:0.9rem;">
-            <strong>02. NUESTRA PROPUESTA:</strong> <strong>LÍDERES FORMANDO LÍDERES</strong> es un programa presencial de 18 horas, desarrollado en 3 encuentros de 6 horas, que acompaña al participante en un proceso progresivo: <strong>LIDERARSE &rarr; LIDERAR &rarr; MULTIPLICAR</strong>. La experiencia combina formación, reflexión, práctica y aplicación para que cada participante pueda fortalecer su liderazgo y convertir lo aprendido en capacidades que pueda compartir con otros.
+          </div>
+          <p class="hero-lead">
+            Una experiencia presencial de 18 horas diseñada bajo estándares internacionales de <em>Leadership Development</em> y <em>Train the Trainer</em>. Fortalecemos el liderazgo humano, integramos Inteligencia Artificial aplicada y convertimos a tus líderes en multiplicadores del conocimiento organizacional.
           </p>
         </div>
 
@@ -1695,9 +1702,6 @@
             <li class="pillar-feature-item"><span class="feature-check">✓</span> Identificación de fortalezas y oportunidades de desarrollo.</li>
           </ul>
         </div>
-        <div class="pillar-bottom-meta">
-          <strong>Experiencia:</strong> Espacios de reflexión, interacción y aplicación para reconocer cómo se está ejerciendo actualmente el liderazgo y qué puede transformarse para generar mayor impacto.
-        </div>
       </div>
 
       <!-- Encuentro 2: LIDERAR -->
@@ -1735,9 +1739,6 @@
             </div>
           </div>
         </div>
-        <div class="pillar-bottom-meta">
-          <strong>Experiencia:</strong> Dinámicas prácticas y situaciones aplicadas a escenarios cercanos a la realidad de los participantes.
-        </div>
       </div>
 
       <!-- Encuentro 3: MULTIPLICAR -->
@@ -1764,9 +1765,6 @@
             <li class="pillar-feature-item"><span class="feature-check">✓</span> Uso de herramientas digitales e inteligencia artificial para crear recursos, estructurar contenidos y apoyar procesos de aprendizaje.</li>
             <li class="pillar-feature-item"><span class="feature-check">✓</span> Construcción de una visión personal como líder multiplicador.</li>
           </ul>
-        </div>
-        <div class="pillar-bottom-meta">
-          <strong>Experiencia:</strong> Los participantes pasarán de recibir conocimiento a ponerlo en palabras, estructurarlo y compartirlo, cerrando el proceso con una aplicación práctica orientada a la multiplicación.
         </div>
       </div>
 
