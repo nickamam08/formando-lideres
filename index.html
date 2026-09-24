@@ -2004,72 +2004,79 @@
           
           <!-- Row 1: 2 Prominent Landscape Cards (6 + 6 = 12) -->
           <div class="gallery-item span-6" onclick="openLightbox(0)">
+            <img src="gallery/experience-fenalco.jpg" alt="Formación en Liderazgo & Equipos · Fenalco Antioquia" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag-pill">Liderazgo & Equipos · Fenalco</span>
+            </div>
+          </div>
+
+          <div class="gallery-item span-6" onclick="openLightbox(1)">
             <img src="gallery/experience-01.jpg" alt="Facilitación & Trabajo en Equipo" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-tag-pill">Facilitación & Trabajo en Equipo</span>
             </div>
           </div>
 
-          <div class="gallery-item span-6" onclick="openLightbox(1)">
+          <!-- Row 2: 3 Medium Cards (4 + 4 + 4 = 12) -->
+          <div class="gallery-item span-4" onclick="openLightbox(2)">
             <img src="gallery/experience-02.jpg" alt="Dinámicas de Liderazgo Vivencial" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-tag-pill">Dinámicas de Liderazgo Vivencial</span>
             </div>
           </div>
 
-          <!-- Row 2: 3 Medium Cards (4 + 4 + 4 = 12) -->
-          <div class="gallery-item span-4" onclick="openLightbox(2)">
+          <div class="gallery-item span-4" onclick="openLightbox(3)">
             <img src="gallery/experience-03.jpg" alt="Talleres y Participación Activa" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-tag-pill">Talleres & Participación Activa</span>
             </div>
           </div>
 
-          <div class="gallery-item span-4" onclick="openLightbox(3)">
+          <div class="gallery-item span-4" onclick="openLightbox(4)">
             <img src="gallery/experience-04.jpg" alt="Construcción de Confianza y Acuerdos" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-tag-pill">Construcción de Confianza</span>
             </div>
           </div>
 
-          <div class="gallery-item span-4" onclick="openLightbox(4)">
+          <!-- Row 3: 4 Compact Cards (3 + 3 + 3 + 3 = 12) -->
+          <div class="gallery-item span-3" onclick="openLightbox(5)">
             <img src="gallery/experience-15.png" alt="Multiplicación Líder a Líder" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-tag-pill">Multiplicación Líder a Líder</span>
             </div>
           </div>
 
-          <!-- Row 3: 4 Compact Cards (3 + 3 + 3 + 3 = 12) -->
-          <div class="gallery-item span-3" onclick="openLightbox(5)">
+          <div class="gallery-item span-3" onclick="openLightbox(6)">
             <img src="gallery/experience-05.jpg" alt="Metodologías de Innovación" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-tag-pill">Innovación & Estrategia</span>
             </div>
           </div>
 
-          <div class="gallery-item span-3" onclick="openLightbox(6)">
+          <div class="gallery-item span-3" onclick="openLightbox(7)">
             <img src="gallery/experience-06.jpg" alt="Sesiones de Inteligencia Emocional" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-tag-pill">Liderazgo Consciente</span>
             </div>
           </div>
 
-          <div class="gallery-item span-3" onclick="openLightbox(7)">
+          <div class="gallery-item span-3" onclick="openLightbox(8)">
             <img src="gallery/experience-07.jpg" alt="Estrategia & Cohesión Grupal" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-tag-pill">Cohesión & Equipos</span>
             </div>
           </div>
 
-          <div class="gallery-item span-3" onclick="openLightbox(8)">
+          <!-- Row 4: 2 Landscape Cards (6 + 6 = 12) -->
+          <div class="gallery-item span-6" onclick="openLightbox(9)">
             <img src="gallery/experience-08.jpg" alt="Práctica y Aplicación Real" loading="lazy">
             <div class="gallery-overlay">
-              <span class="gallery-tag-pill">Casos Reales</span>
+              <span class="gallery-tag-pill">Casos Reales & Aplicación</span>
             </div>
           </div>
 
-          <!-- Row 4: 1 Wide Banner Card (12 = 12) -->
-          <div class="gallery-item span-12" onclick="openLightbox(9)">
+          <div class="gallery-item span-6" onclick="openLightbox(10)">
             <img src="gallery/experience-16.png" alt="Innovación & Aplicación Práctica con IA" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-tag-pill">Integración Práctica con Inteligencia Artificial</span>
@@ -2118,7 +2125,7 @@
           <button class="lightbox-btn" onclick="prevLightbox(event)" title="Anterior (Flecha Izq)">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
           </button>
-          <span id="lightboxCounter" style="font-family:var(--font-mono); font-size:0.8rem; opacity:0.8;">01 / 10</span>
+          <span id="lightboxCounter" style="font-family:var(--font-mono); font-size:0.8rem; opacity:0.8;">01 / 11</span>
           <button class="lightbox-btn" onclick="nextLightbox(event)" title="Siguiente (Flecha Der)">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </button>
@@ -2156,8 +2163,9 @@
       }
     }
 
-    // Lightbox Logic - 10 High-Impact Executive Workshop Experiences
+    // Lightbox Logic - 11 High-Impact Executive Workshop Experiences
     const galleryImages = [
+      { src: "gallery/experience-fenalco.jpg", caption: "Formación de liderazgo y fortalecimiento de equipos en Fenalco Antioquia" },
       { src: "gallery/experience-01.jpg", caption: "Facilitación estratégica y dinámicas de equipo en vivo" },
       { src: "gallery/experience-02.jpg", caption: "Dinámicas vivenciales de liderazgo consciente y expresión" },
       { src: "gallery/experience-03.jpg", caption: "Talleres prácticos y participación activa de colaboradores" },
