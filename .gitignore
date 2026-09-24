@@ -1,0 +1,15 @@
+# Vercel
+.vercel
+
+# Agents & cache
+.agents/
+.gemini/
+__pycache__/
+*.pyc
+
+# System & OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

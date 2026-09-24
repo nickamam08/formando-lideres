@@ -1,0 +1,18 @@
+{
+  "name": "propuesta-formando-lideres",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Propuesta Comercial Interactiva — Líderes Formando Líderes | Grupo Ve Por Más S.A.S.",
+  "scripts": {
+    "start": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "liderazgo",
+    "propuesta-comercial",
+    "inteligencia-artificial",
+    "train-the-trainer",
+    "bento-grid"
+  ],
+  "author": "Grupo Ve Por Más S.A.S."
+}
